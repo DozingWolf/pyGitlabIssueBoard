@@ -1,0 +1,1 @@
+paraLocalPath = './conf/main.conf'
