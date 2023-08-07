@@ -1,0 +1,6 @@
+[db]
+dbpath = ./db/
+[log]
+logpath = ./log/
+[gitlab]
+token = 112233445566
