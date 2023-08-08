@@ -10,4 +10,7 @@ if __name__ == '__main__':
 
     logger.debug('# TEST 2')
     db = sqliteDB(dbname='Gitlab-issue.db')
-    db.createObjTable()
+    if db.checkObjTable(tname='gitlab_accesstoken'):
+        logger.debug('table exists')
+    else:
+        db.createObjTable()
