@@ -159,6 +159,8 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+# log file
+log/
 # prod conf
 conf/main.conf
 # prod db
