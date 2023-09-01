@@ -22,7 +22,7 @@ class sqliteDB(object):
         self.__dbSchema.close()
 
     def dbInitial(self)->bool:
-        __sysObjTableList = []
+        __sysObjTableList = ['gitlab_accesstoken']
         __sysObjViewList = []
         # 循环检查表，如果不存在就初始化，并写入需要的初始化数据
         for __tableName in __sysObjTableList:
@@ -47,7 +47,7 @@ class sqliteDB(object):
         except Exception as err:
             raise err
 
-    def createObjTable(self)->bool:
+    def createObjTable_gitlab_accesstoken(self)->bool:
         # 创建表对象
         createSql = '''
         create table gitlab_accesstoken
